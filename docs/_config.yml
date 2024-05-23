@@ -2,4 +2,4 @@
 theme: minima
 skin: dark
 social_links:
-  { platform: linkedin, user_url: https://www.linkedin.com/in/tombu }
+  - {platform: linkedin, user_url: https://www.linkedin.com/in/tombu }
