@@ -1,1 +1,1 @@
-[QBaWa is the moat AI startups are looking for](QBaWa-is-gold.md)
+[QBaWa is the moat AI startups are looking for](_posts/QBaWa-is-gold.md)
