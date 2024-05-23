@@ -1,1 +1,3 @@
-###LLMonPy blog
+# Posts
+
+[QBaWa is the moat AI startups are looking for](QBaWa-is-gold.md)
