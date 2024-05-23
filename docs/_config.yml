@@ -1,4 +1,7 @@
-# set theme
+title: LLMonPy
+author:
+  name: Tom Burns
+  email: public@llmonpy.ai
 theme: minima
 skin: dark
 social_links:
