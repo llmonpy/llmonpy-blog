@@ -2,6 +2,7 @@ title: LLMonPy
 author:
   name: Tom Burns
   email: public@llmonpy.ai
-theme: minima
+#theme: minima
+remote_theme: jekyll/minima
 social_links:
   - {platform: linkedin, user_url: https://www.linkedin.com/in/tombu }
