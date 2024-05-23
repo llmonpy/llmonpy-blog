@@ -5,5 +5,4 @@ author:
 #theme: minima
 remote_theme: jekyll/minima
 skin: dark
-social_links:
-  - {platform: linkedin, user_url: https://www.linkedin.com/in/tombu }
+twitter_username: sftombu
