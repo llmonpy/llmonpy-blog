@@ -4,7 +4,6 @@ author:
   email: public@llmonpy.ai
 #theme: minima
 remote_theme: jekyll/minima
-skin: dark
 twitter_username: sftombu
 minima:
   date_format: "%Y-%m-%d"
