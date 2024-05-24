@@ -1,4 +1,6 @@
-### QBaWa Is The Moat AI Startups Are Looking For
+---
+title: QBaWa Is The Moat AI Startups Are Looking For
+---
 
 What is QBaWa?  It is a funny sounding acronym for Question - Best Answer - Worse Answer. QBaWa is the data that LLMs 
 need to generate better, more consistent results.  You can use QBaWa to provide examples of good answers for prompts or 
