@@ -1,4 +1,3 @@
-# How AI Startups Will Build a Moat
 Climbing a learning curve sooner  or faster is a proven path for a company to build a moat to defend itself from 
 copycats.  The steps on the learning curve for a LLM application are examples of good responses to requests.  Startups
 that climb the curve the fastest will have the best request-flow and then get the most value from the requests by using
