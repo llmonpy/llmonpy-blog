@@ -76,7 +76,7 @@ of your request-flow.
    this approach, you could be sure that you are maintaining or improving quality while reducing costs.
 
 ## The Moat: The QBaWa Flywheel
-QBaWa a proven technique to build moat.  Everytime you do a Google search, Google is generating QBaWa.  Whatever links
+QBaWa a proven technique to build a moat.  Everytime you do a Google search, Google is generating QBaWa.  Whatever links
 you clicked on are best answers, while the links you ignored are worse answers.  Google uses this data to improve their
 search results and ensure that users prefer Google to other search engines.  The QBaWa flywheel is a virtuous cycle
 where more and better QBaWa produces better responses to requests, which produces more requests.  Google has been using this
