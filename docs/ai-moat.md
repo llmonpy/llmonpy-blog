@@ -1,3 +1,4 @@
+# How Starts Will Build a Moat
 Climbing a learning curve sooner  or faster is a proven path for a company to build a moat to defend itself from 
 copycats.  The steps on the learning curve for a LLM application are examples of good responses to requests.  Startups
 that climb the curve the fastest will have the best request-flow and then get the most value from the requests by using
@@ -29,7 +30,7 @@ The most useful form of good responses is Question, Best Answer, Worse Answer --
 answers for examples in a prompt and both best and worse answers to fine tune a model using the latest techniques that
 improve quality and lower costs of training.  
 
-## Lifecycle of a pipeline
+## Lifecycle of an AI pipeline
 When developing an AI pipeline that you intend to scale, the goal is to increase quality while reducing cost per request.
 To be successful scaling an AI pipeline, you must focus your efforts on automating evaluations of each step.  You can't get
 better if you do not have good evaluations.  The evaluations have to be automated to scale.  Fortunately, you can use
@@ -69,10 +70,17 @@ of your request-flow.
    with fine-tuning you might not need as many LLM judges to evaluate responses.  You might also reduce some tourney steps
    to a single prompt and a fine-tuned LLM.  
 4. **Production:** -- Move to the production stage with the cost and quality of the AI pipeline meet your targets.  The
-   goal of this stage is to ramp up request-flow and use the request-flow to continuously improve cost and quality.  However...
+   goal of this stage is to ramp up request-flow and use the request-flow to continuously improve cost and quality.  By
+   this stage, you could automate the cost optimization of the pipeline by creating AI pipelines that try different
+   approaches to reduce cost, then use the recordings of the responses to your request-flow to evaluate the results. Using
+   this approach, you could be sure that you are maintaining or improving quality while reducing costs.
 
 ## The Moat: The QBaWa Flywheel
-
+QBaWa a proven technique to build moat.  Everytime you do a Google search, Google is generating QBaWa.  Whatever links
+you clicked on are best answers, while the links you ignored are worse answers.  Google uses this data to improve their
+search results and ensure that users prefer Google to other search engines.  The QBaWa flywheel is a virtuous cycle
+where more and better QBaWa produces better responses to requests, which produces more requests.  Google has been using this
+model for decades.  Once a company has built a lead on the learning curve, it is very hard for competitors to catch up.
 
 ## LLMonPy
 LLMonPy is a framework that creates huge amounts of **QBaWa** through the use of tournaments, automated evaluations and
@@ -83,6 +91,11 @@ One thing that I noticed while working on LLMonPy and [Needle in a Needlestack](
 is that there has been a huge increase in rate limits and a decrease in costs.  A year ago, you would be lucky to get 10
 requests a minute.  Now, you can easily get 1000s of requests and millions of tokens per minute.  Because they require so many
 requests, LLMonPy and the ideas in this post would be useless without these improvements. 
+
+## Conclusions
+If I am right, there will be a furious land grab for the most valuable request-flows.  To climb the learning curve faster,
+companies will conduct thousands of experiments on their request-flows to generate **QBaWa** faster than their competitors.
+It will be a great time to be a Nvida shareholder (I am not a Nvida shareholder except of index funds). 
 
 ## References
 * [Mastering LLMs: A Conference For Developers & Data Scientists](https://maven.com/parlance-labs/fine-tuning?cohortSlug=): Great conference that helped cystralize my thinking.
