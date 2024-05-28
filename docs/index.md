@@ -1,1 +1,1 @@
-[QBaWa is the moat AI startups are looking for](2024-5-24-QBaWa-is-gold)
+[How AI Startups Will Build a Moat](ai-moat)
