@@ -46,7 +46,7 @@ An easy way to generate **QBaWa** is to use a tournament.  A tournament is a con
 the responses are judged by other LLMs.  Each round of a tournament produces the best answer and the worst answer -- so, 
 **QBaWa**. You will not be able to use all of the **QBaWa** you generate, some will be too low quality.  You will want
 to choose responses that meet the requirements as a "Best" answer for the prompt. Use automated evaluation based on
-responses that meet the minimum standard to determine if a response should be added to the **QBaWa&** dataset.  
+responses that meet the minimum standard to determine if a response should be added to the **QBaWa** dataset.  
 
 ### Experiments to generate QBaWa
 If you record the inputs & outputs of each step of a pipeline, you can replay the requests using different prompts and
@@ -79,16 +79,16 @@ of your request-flow.
    this approach, you could be sure that you are maintaining or improving quality while reducing costs.
 
 ## The Moat: The QBaWa Flywheel
-QBaWa a proven technique to build a moat.  Everytime you do a Google search, Google is generating **QBaWa**.  Whatever links
+QBaWa is a proven technique to build a moat.  Everytime you do a Google search, Google is generating **QBaWa**.  Whatever links
 you clicked on are best answers, while the links you ignored are worse answers.  Google uses this data to improve their
 search results and ensure that users prefer Google to other search engines.  The **QBaWa** flywheel is a virtuous cycle
 where more and better **QBaWa** produces better responses to requests, which produces more requests.  Google has been using this
 model for decades.  Once a company has built a lead on the learning curve, it is very hard for competitors to catch up.
 
 ## LLMonPy (Lemon Pie)
-LLMonPy is a framework that creates huge amounts of **QBaWa** through the use of tournaments, automated evaluations and
-experiments. I will release a first, quite rough version in a couple of weeks.  You can [follow me on Twitter](https://x.com/sftombu)
-to keep up with my progress.  
+LLMonPy is an AI pipeline framework I am working on that creates huge amounts of **QBaWa** through the use of 
+tournaments, automated evaluations and experiments. I will release a first, quite rough version in a couple of weeks.  
+You can [follow me on Twitter](https://x.com/sftombu) to keep up with my progress.  
 
 One thing that I noticed while working on LLMonPy and [Needle in a Needlestack](https://nian.llmonpy.ai/)
 is that there has been a huge increase in rate limits and a decrease in costs.  A year ago, you would be lucky to get 10
