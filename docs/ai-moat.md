@@ -6,8 +6,9 @@ title: How Startups Will Build a Moat
 Climbing a learning curve sooner  or faster is a proven path for a company to build a moat to defend itself from 
 copycats.  The steps on the learning curve for a LLM application are examples of good responses to requests.  Startups
 that climb the curve the fastest will have the best request-flow and then get the most value from the requests by using
-them as the basis for hundreds or thousands of experiments to improve the responses.  [i should invent a KPI that 
-combines number of requests and the value you get from them]
+them as the basis for hundreds or thousands of experiments to improve the responses.  Every market segment that uses AI is
+likely to be a winner-take-all competition where the fastest to climb the learning curve will win. This post explains how
+the winners will win. 
 
 ## What is an AI pipeline?
 An example of an AI pipeline is a system that generates an employment contract for a specific position. 
@@ -29,7 +30,7 @@ The idea is to break the pipeline down into small steps to get better, more
 consistent responses from the LLM.  The key to climbing the learning curve is to generate examples of good responses to
 requests.  You can use the good responses to provide examples to the LLM in a prompt, which has been shown to make a
 dramatic difference in the quality and consistency of the responses.  When you have enough good responses, you can use
-them to fine tune a small model to generate responses faster, cheaper and with higher quality than a general large model.
+them to fine tune a small model to generate responses faster, cheaper and with higher quality than a generalist large model.
 The most useful form of good responses is Question, Best Answer, Worse Answer -- **QBaWa** for short. You can use the best
 answers for examples in a prompt and both best and worse answers to fine tune a model using the latest techniques that
 improve quality and lower costs of training.  
