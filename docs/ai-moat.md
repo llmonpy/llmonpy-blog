@@ -7,8 +7,8 @@ Climbing a learning curve sooner  or faster is a proven path for a company to bu
 copycats.  The steps on the learning curve for a LLM application are examples of good responses to requests.  Startups
 that climb the curve the fastest will have the best request-flow and then get the most value from the requests by using
 them as the basis for hundreds or thousands of experiments to improve the responses.  Every market segment that uses AI is
-likely to be a winner-take-all competition where the fastest to climb the learning curve will win. This post explains how
-the winners will win. 
+likely to be a winner-take-all competition where the fastest to climb the learning curve will win. This post outlines a
+theory about how the winners will win. 
 
 ## What is an AI pipeline?
 An example of an AI pipeline is a system that generates an employment contract for a specific position. 
@@ -87,7 +87,7 @@ search results and ensure that users prefer Google to other search engines.  The
 where more and better **QBaWa** produces better responses to requests, which produces more requests.  Google has been using this
 model for decades.  Once a company has built a lead on the learning curve, it is very hard for competitors to catch up.
 
-## LLMonPy
+## LLMonPy (Lemon Pie)
 LLMonPy is a framework that creates huge amounts of **QBaWa** through the use of tournaments, automated evaluations and
 experiments. I will release a first, quite rough version in a couple of weeks.  You can [follow me on Twitter](https://x.com/sftombu)
 to keep up with my progress.  
