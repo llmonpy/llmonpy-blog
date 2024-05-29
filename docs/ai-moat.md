@@ -55,7 +55,7 @@ decide which responses are the best and worst.  This is a great way to generate 
 of your request-flow.  
 
 ### The stages of an AI pipeline are:
-1. **Bootstrap:** Flesh out the steps of the pipeline.  Use tournaments for most pipeline step, with humans as 
+1. **Bootstrap:** Flesh out the steps of the pipeline.  Use tournaments for most pipeline steps, with humans as 
    judges to build up a QBaWa dataset for each tournament that you can use for evaluation. You will need as many example
    requests as you can get to improve the scope of your **QBaWa**.  You can run automated evaluations parallel to the 
    human evaluation.  Once the automated evaluations almost always agree with the human evaluations, you can switch to 
