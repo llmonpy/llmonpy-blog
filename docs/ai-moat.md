@@ -1,7 +1,6 @@
 ---
 title: How Startups Will Build a Moat
 ---
-# How Startups Will Build a Moat
 *by [Tom Burns](mailto:public@llmonpy.ai)* <br><br>
 Climbing a learning curve sooner or faster is a proven path for a company to build a moat to defend itself from
 copycats. Startups that climb the curve the fastest will have the best request-flow and get the most value from the requests by using
