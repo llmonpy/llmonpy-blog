@@ -3,12 +3,11 @@ title: How Startups Will Build a Moat
 ---
 # How Startups Will Build a Moat
 *by [Tom Burns](mailto:public@llmonpy.ai)* <br><br>
-Climbing a learning curve sooner  or faster is a proven path for a company to build a moat to defend itself from 
-copycats.  The steps on the learning curve for a LLM application are examples of good responses to requests.  Startups
-that climb the curve the fastest will have the best request-flow and then get the most value from the requests by using
-them as the basis for hundreds or thousands of experiments to improve the responses.  Every market segment that uses AI is
+Climbing a learning curve sooner or faster is a proven path for a company to build a moat to defend itself from
+copycats. Startups that climb the curve the fastest will have the best request-flow and get the most value from the requests by using
+them as the basis for hundreds or thousands of experiments to improve the responses. Every market segment that uses AI is
 likely to be a winner-take-all competition where the fastest to climb the learning curve will win. This post outlines a
-theory about how the winners will win. 
+theory about how the winners will win.
 
 ## What is an AI pipeline?
 An example of an AI pipeline is a system that generates an employment contract for a specific position. 
@@ -21,7 +20,7 @@ could look something like this:
 4. Generate a contract that includes the differences.
 5. Provide contract for guided review that includes explanations of what to check.
 
-Each of these steps are probably also pipelines.  For example, step 1 could be:
+Each of these steps could also be pipelines.  For example, step 1 could be:
 
 1. Loop through each required piece of information and ask the LLM if is present in the request. So if there are 10 required pieces of information, there would be 10 prompts to the LLM.  Each prompt would be something like: Does this {contract request} include {information}? Where contract request is this specific request for a contract and information could be "company name", "employee name", "start date", etc.  The LLM would respond with a yes or no.  The responses would be used to determine if the request is complete.
 2. Assemble the responses from the LLM and request the user provide any missing information.
