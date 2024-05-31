@@ -44,7 +44,7 @@ pipeline.  Focusing on evaluations will also help you understand how to make a b
 ### Tournaments and automated evaluation to generate QBaWa
 An easy way to generate **QBaWa** is to use a tournament.  A tournament is a contest between multiple prompts and LLMs where
 the responses are judged by other LLMs.  Each round of a tournament produces the best answer and the worst answer -- so, 
-**QBaWa**. You will not be able to use all of the **QBaWa** you generate, some will be too low quality.  You will want
+**QBaWa**. You will not be able to use all the **QBaWa** you generate, some will be too low quality.  You will want
 to choose responses that meet the requirements as a "Best" answer for the prompt. Use automated evaluation based on
 responses that meet the minimum standard to determine if a response should be added to the **QBaWa** dataset.  
 
@@ -84,6 +84,11 @@ you clicked on are best answers, while the links you ignored are worse answers. 
 search results and ensure that users prefer Google to other search engines.  The **QBaWa** flywheel is a virtuous cycle
 where more and better **QBaWa** produces better responses to requests, which produces more requests.  Google has been using this
 model for decades.  Once a company has built a lead on the learning curve, it is very hard for competitors to catch up.
+<p align="center">
+  <img src="king_qbawa_squint.png" alt="King QBaWa">
+</p>
+<p align="center" style="font-weight: bolder;font-size: x-large"><em>King QBaWa is Gold</em></p>
+<br>
 
 ## LLMonPy (Lemon Pie)
 LLMonPy is an AI pipeline framework I am working on that creates huge amounts of **QBaWa** through the use of 
