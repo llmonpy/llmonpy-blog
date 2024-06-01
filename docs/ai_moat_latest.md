@@ -1,18 +1,48 @@
 ---
 title: How AI Startups Will Build a Moat
 ---
-
-QBawa example
-Q: Can you summarize this article in one sentence. The incident happened on Fife Street between 04:30 BST and 05:00 BST on Saturday. The police have appealed for witnesses to the crash. York Road is closed between its junctions with Skegoneill Avenue and Alexandra Park Avenue. Diversions are in place. 
-BA: A crash occurred on Fife Street early Saturday morning, prompting police to appeal for witnesses and close York Road, causing diversions.
-WA: Sure! Here's a summary of the article in one sentence: A car crash occurred on Fife Street between 4:30 and 5:00 AM on Saturday, and the police are appealing for witnesses and have closed York Road between Skegoneill Avenue and Alexandra Park Avenue, with diversions in place.
-
 *by [Tom Burns](mailto:public@llmonpy.ai)* <br><br>
-Climbing a learning curve sooner or faster is a proven path for a company to build a moat to defend itself from
-copycats. Startups that climb the curve the fastest will have the best request-flow and get the most value from the requests by using
-them as the basis for hundreds or thousands of experiments to improve the responses. Every market segment that uses AI is
-likely to be a winner-take-all competition where the fastest to climb the learning curve will win. This post outlines a
-theory about how the winners will win.
+Google has built one of the most resilient moats in tech based by recording 
+
+
+This post will outline a theory about how AI startups will use experience responding to requests to generate data that
+makes them better at responding to future requests.  I call this data QBaWa -- short for Question, Best Answer, Worse Answer.
+
+
+
+
+Data about preferred outcomes is a proven approach to protect a product from copycats. Everytime you do a Google search, 
+Google is recording data about your preferences based on the links you click on.  It uses that data to improve its search
+results for everyone.  The v  This post outlines a theory about 
+how AI startups will use preference data to build an unassailable lead over their competitors.  
+
+
+The AI equivalent of click data is Question, Best Answer,
+Worse Answer. I call this form of data QBaWa.  Here is an example of QBaWa from a public dataset:
+
+<b>Question: </b>Can you summarize this article in one sentence: The incident happened on Fife Street between 04:30 BST and 05:00 BST on 
+Saturday. The police have appealed for witnesses to the crash. York Road is closed between its junctions with 
+Skegoneill Avenue and Alexandra Park Avenue. Diversions are in place. 
+
+<b>Best Answer: </b>
+A crash occurred on Fife Street early Saturday morning, prompting police to appeal for witnesses and close York Road, 
+causing diversions.
+
+<b>Worse Answer: </b>Sure! Here's a summary of the article in one sentence: A car crash occurred on Fife Street between 4:30 and 5:00 AM on 
+Saturday, and the police are appealing for witnesses and have closed York Road between Skegoneill Avenue and Alexandra 
+Park Avenue, with diversions in place.
+
+### QBaWa Flywheel
+You can use QBaWa to get better responses from LLMs and to fine-tune an LLM to generate even better responses.
+The **QBaWa** flywheel is a virtuous cycle where more and better QBaWa produces better responses to requests, which 
+leads to more requests.  This cycle produces winner take all markets where catching up once you fall behind is almost
+impossible.  The post outlines a theory about how the winners use their AI pipelines to generate QBaWa faster than their
+competitors.  
+<p align="center">
+  <img src="king_qbawa_squint.png" alt="King QBaWa">
+</p>
+<p align="center" style="font-weight: bolder;font-size: x-large"><em>King QBaWa is Gold</em></p>
+<br>
 
 ## What is an AI pipeline?
 An example of an AI pipeline is a system that generates an employment contract for a specific position. 
@@ -23,7 +53,7 @@ could look something like this:
 2. Identify the contract template that is closest to the request.
 3. Identify the differences between the request and the template.
 4. Generate a contract that includes the differences.
-5. Provide contract for guided review that includes explanations of what to check.
+5. Provide the contract for guided review by a human that includes explanations of what to check.
 
 Each of these steps could also be pipelines.  For example, step 1 could be:
 
@@ -45,14 +75,14 @@ To be successful scaling an AI pipeline, you must focus your efforts on automati
 better if you do not have good evaluations.  The evaluations have to be automated to scale.  Fortunately, you can use
 the same data -- **QBaWa** -- to automate evaluations that you use to improve the responses to requests.  People frequently
 want to focus on the responses to requests, but it is actually the evaluations that will drive improvements in the
-pipeline.  Focusing on evaluations will also help you understand how to make a better prompt. 
+pipeline.  Focusing on evaluations will also help you understand how to make a better prompt.
 
 ### Tournaments and automated evaluation to generate QBaWa
-An easy way to generate **QBaWa** is to use a tournament.  A tournament is a contest between multiple prompts and LLMs where
-the responses are judged by other LLMs.  Each round of a tournament produces the best answer and the worst answer -- so, 
-**QBaWa**. You will not be able to use all the **QBaWa** you generate, some will be too low quality.  You will want
-to choose responses that meet the requirements as a "Best" answer for the prompt. Use automated evaluation based on
-responses that meet the minimum standard to determine if a response should be added to the **QBaWa** dataset.  
+An approach to get consistently good responses for a step in a pipeline is to present multiple LLMs with the 
+same (or similar) prompt.  The responses from the LLMs are then judged by more LLMs with the winner of each round being
+determined by majority vote. I call this approach a tournament.  The response that wins the most rounds in the tournament
+is the winner.  Each round of the tournament has a best answer and a worse answer -- **QBaWa** -- that can be used
+to generate better answers in the future.
 
 ### Experiments to generate QBaWa
 If you record the inputs & outputs of each step of a pipeline, you can replay the requests using different prompts and
@@ -60,10 +90,15 @@ LLMs.  With an automated evaluation system, you can compare the responses to the
 decide which responses are the best and worst.  This is a great way to generate **QBaWa** and get the most value out
 of your request-flow.  
 
-### The stages of an AI pipeline are: 
+### This sounds expensive!
+This approach does make a lot of LLM requests early in the pipeline's lifecycle.  However, you will not have many requests
+during the early stages of the pipeline lifecycle.  You are generating **QBaWa** that you will use to lower costs per
+request when you do have a lot of requests.  It is also important to keep in mind that the cost of LLM requests has decreased
+drastically over the last year.  The price for GPT-4 in March 2023 was $90 per million tokens. Gemini 1.5 Flash is a much
+faster and more capable model and the price is only $0.35 per million tokens.  That is a **99.6%** decrease in cost.  Given
+hardware and software improvements, the cost of LLM requests is likely to continue to decrease very quickly. 
 
-mention overkill in bootstrap stage -- improve quality, cost doesn't matter much because you have so few requests
-
+### The stages of an AI pipeline are:
 1. **Bootstrap:** Flesh out the steps of the pipeline.  Use tournaments for most pipeline steps, with humans as 
    judges to build up a QBaWa dataset for each tournament that you can use for evaluation. You will need as many example
    requests as you can get to improve the scope of your **QBaWa**.  You can run automated evaluations parallel to the 
@@ -87,22 +122,10 @@ mention overkill in bootstrap stage -- improve quality, cost doesn't matter much
    approaches to reduce cost, then use the recordings of the responses to your request-flow to evaluate the results. Using
    this approach, you could be sure that you are maintaining or improving quality while reducing costs.
 
-## The Moat: The QBaWa Flywheel
-QBaWa is a proven technique to build a moat.  Everytime you do a Google search, Google is generating **QBaWa**.  Whatever links
-you clicked on are best answers, while the links you ignored are worse answers.  Google uses this data to improve their
-search results and ensure that users prefer Google to other search engines.  The **QBaWa** flywheel is a virtuous cycle
-where more and better **QBaWa** produces better responses to requests, which produces more requests.  Google has been using this
-model for decades.  Once a company has built a lead on the learning curve, it is very hard for competitors to catch up.
-<p align="center">
-  <img src="king_qbawa_squint.png" alt="King QBaWa">
-</p>
-<p align="center" style="font-weight: bolder;font-size: x-large"><em>King QBaWa is Gold</em></p>
-<br>
-
 ## LLMonPy (Lemon Pie)
 LLMonPy is an AI pipeline framework I am working on that creates huge amounts of **QBaWa** through the use of 
-tournaments, automated evaluations and experiments. I will release a first, quite rough version in a couple of weeks.  
-You can [follow me on Twitter](https://x.com/sftombu) to keep up with my progress.  
+tournaments, automated evaluations and experiments. I will release a rough version in a couple of weeks.  You can
+[follow me on Twitter](https://x.com/sftombu) to keep up with my progress.  
 
 One thing that I noticed while working on LLMonPy and [Needle in a Needlestack](https://nian.llmonpy.ai/)
 is that there has been a huge increase in rate limits and a decrease in costs.  A year ago, you would be lucky to get 10
@@ -115,7 +138,7 @@ companies will conduct thousands of experiments on their request-flows to genera
 It will be a great time to be a Nvida shareholder (I am not a Nvida shareholder except of index funds). 
 
 ## References
-* [Mastering LLMs: A Conference For Developers & Data Scientists](https://maven.com/parlance-labs/fine-tuning?cohortSlug=): Great conference that helped cystralize my thinking.
+* [Mastering LLMs: A Conference For Developers & Data Scientists](https://maven.com/parlance-labs/fine-tuning?cohortSlug=): Great conference that helped crystallize my thinking.
 * [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685): Introduced the idea of using LLMs as judges. Picking between 2 responses is an easier application of LLM judges.
 * [More Agents is All You Need](https://arxiv.org/html/2402.05120v1): Using more LLMs to improve your responses.
 * [LoRA Land: 310 Fine-tuned LLMs that Rival GPT-4, A Technical Report](https://arxiv.org/abs/2405.00732): Small fine-tuned models can outperform larger models.
