@@ -48,7 +48,7 @@ here.](https://nian.llmonpy.ai/methodology)
 [LLMonPy](https://github.com/llmonpy/llmonpy) makes it very easy to use multiple LLMs to judge the output of multiple
 LLMs in a tourney.  For example:
 ```python
-        ordered_output_list = judge_output(response_list, judge_list, thread_pool, recorder)
+  ordered_output_list = judge_output(response_list, judge_list, thread_pool, recorder)
 ```
 Given a response_list of 9 outputs from LLMs and a list of 5 judges, this function will run a tourney of 56 one on one
 contests between the responses and return a list ordered by the number of victories a response had.  LLMonPy runs the 
@@ -58,13 +58,13 @@ can be used to fine-tune the LLMs in the future.
 
 Tourneys are quite simple with LLMonPy too:
 ```python
-        client_list = [GPT4o, MISTRAL_LARGE, GEMINI_PRO, GEMINI_FLASH, ANTHROPIC_SONNET, MISTRAL_7B, ANTHROPIC_HAIKU,
-                       ANTHROPIC_OPUS]
-        judge_client_list = [MISTRAL_LARGE, GEMINI_FLASH, MISTRAL_7B, MISTRAL_8X22B, ANTHROPIC_HAIKU]
-        generators = create_prompt_steps(SamplePrompt(), client_list, [0.0])
-        judge_list = create_prompt_steps(SamplePrompt().JudgePrompt(), judge_client_list)
-        tournament = LLMonPyTournament(generators, judge_list)
-        result_list, _ = do_llmonpy_step(tournament, recorder)
+  client_list = [GPT4o, MISTRAL_LARGE, GEMINI_PRO, GEMINI_FLASH, ANTHROPIC_SONNET, 
+                 MISTRAL_7B, ANTHROPIC_HAIKU, ANTHROPIC_OPUS]
+  judge_client_list = [MISTRAL_LARGE, GEMINI_FLASH, MISTRAL_7B, MISTRAL_8X22B, ANTHROPIC_HAIKU]
+  generators = create_prompt_steps(SamplePrompt(), client_list, [0.0])
+  judge_list = create_prompt_steps(SamplePrompt().JudgePrompt(), judge_client_list)
+  tournament = LLMonPyTournament(generators, judge_list)
+  result_list, _ = do_llmonpy_step(tournament, recorder)
 ```
 This example creates a tournament with 8 generators and 5 judges. The above example is only using one temperature, but
 you could use more by changing the [0.0] to include more temperatures (ex:[0.0, 0.1, 0.2, 0.3, 0.4, 0.5]).  With six
