@@ -1,2 +1,2 @@
-# llmonpy-blog what is this
-do changes from here show up?
+# The blog for LLMonPy
+[Read the LLMonPy blog](https://blog.llmonpy.ai)
